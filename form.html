@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pp{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style:oblique;
+        }
+        #ps{
+            font-size: 25px;
+            border: 20px;
+        }
+        button{
+            border: 10px;
+            border-radius: 25%;
+            size: 100px;
+    
+        }
+    </style>
+    <script>
+        function HandleSubmit(){
+            const car = document.getElementsByName("car");
+            for(i=0;i<car.length;i++){
+                if(car[i].checked)
+                {
+                    document.getElementById("result").innerHTML="Selected Car is " + car[i].value;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="lo">
+    <!-- <form> -->
+        <div id="pp">
+        <label for="car"><b>CHOOSE THE CAR</b></label><br>
+        </div><br>
+        <br>
+        <div id="ps">
+        <label for="ferrari">Ferrari</label>
+        <input type="radio" id="ferrari" name="car" value="ferrari"><br>
+        </div>
+        <div id="ps">
+        <label for="Audi">Audi</label>
+        <input type="radio" id="Audi" name="car" value="Audi"><br>
+        </div>
+        <div id="ps">
+        <label for="Martin">Martin</label>
+        <input type="radio" id="Martin" name="car" value="Martin"><br>
+        </div>
+        <div id="ps">
+            <label for="bmw">BMW</label>
+            <input type="radio" id="bmw" name="car" value="BMW"><br>
+        </div>
+        <div id="ps">
+            <label for="Mercedes">Mercedes</label>
+            <input type="radio"  id="Mercedes" name="car" value="Mercedes"><br>
+        </div>
+        <br>
+
+        <button onclick="HandleSubmit()">Submit</button>
+
+    <!-- </form> -->
+    </div>
+    <div id="result">
+        <h2>Selected car is : </h2>
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:gray;
+        }
+        .pagination{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .pagination a{
+            padding: 5px 5px;
+            border: 3px solid black;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 3px 3px 4px;
+            display: inline-block;
+           
+        }
+        .pagination a.active{
+            background-color: aqua;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .pagination a:hover:not(.active){
+            background-color: grey;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+        .page{
+            height: 50%;
+            width: 95%;
+            border: 3px solid black;
+            background-color: rgb(251, 124, 145);
+            border-radius: 50%;
+            border-color: brown;
+            box-shadow: 3px 3px 20px purple;
+            margin: 20px;
+            padding: 20px;
+        }
+        .inner{
+            margin: 20px;
+            padding: 20px;
+        }
+        .dropdown button{
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 3px 3px 5px red;
+            cursor: pointer;
+        }
+        .dropdown a{
+            border: 2px;
+            display: block;
+            border: 2px solid white;
+            border-radius: 5%;
+            width: auto;
+            margin: 10px;
+            background-color: grey;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .dropdown .content{
+            
+            display: none;
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .dropdown{
+            display: block;
+            width: fit-content;
+            margin: 0% 40%;  
+        }
+        .dropdown:hover button{
+            font-size: 1.2em;
+            background-color: aqua;
+        }
+        .dropdown a:hover{
+            background-color: rgb(102, 97, 97);
+            font-weight: bold;
+            color: black;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="inner">
+    <h1 align="center">PAGE 2</h1>
+    <h2 align="center">Click on the Options Button</h2><br>
+    <div class="dropdown">
+        <button>Options</button><br>
+        <div class="content">
+        <a href="">SOUTH INDIAN</a>
+        <a href="">NORTH INDIAN</a>
+        <a href="">CHINESE</a>
+        <a href="">CONTINENTAL</a>
+        </div>
+    </div>
+        </div>
+    <div class="pagination">
+        <a href="file1.html"><</a>
+        <a href="file1.html">1</a>
+        <a href="file2.html" class="active">2</a>
+        <a href="file3.html">3</a>
+        <a href="file4.html">4</a>
+        <a href="file5.html">5</a>
+        <a href="file3.html">></a>
+    </div>
+    </div>
+</body>
+</html>

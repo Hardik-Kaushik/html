@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .cat button{
+            border: 3px solid black;
+            border-radius: 15%;
+            padding: 10px;
+            margin-left: 50%;
+            margin-top: 20%;
+            background-color:rgb(223, 141, 19);
+        }
+        .cat a{
+            text-decoration: none;
+            color: black;         
+        }
+        .cat a:hover{
+            background-color: rgb(150, 227, 17);
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        h1.cc{
+            color: orangered;
+            margin: 30px;
+        }
+        #ce{
+            color: blueviolet;
+            display: inline;
+        }
+        .cd{
+            font-size: 3em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: 20px;
+        }
+        .lef{
+            width: auto; 
+            display: inline-block;   
+            margin: 10px;
+            padding: 10px; 
+            margin-top: 0px;                 
+        }
+        .rig{
+            width: auto;  
+            display: inline-block;  
+            margin: 10px;
+            padding: 10px; 
+            margin-top: 0px;                     
+        }
+        .sidel{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        .sider{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .main{
+            display: flex;
+            margin: 15px 15px;
+            padding: 20px;
+        }
+        @media screen and (max-width:1100px) and (min-width:720px){
+            .cen{
+                margin: 0px auto;
+                justify-content: center;
+            }
+            .sidel,.sider{
+                display: block;
+            }
+        }
+        @media screen and (max-width:720px){        
+            .main{
+                display: block;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                height: 400px;
+                width: 500px;
+            } 
+            .sidel{
+                flex: none;
+                display: block;
+            }
+            .sider{
+                flex: none;
+                display: block;
+            }                              
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">This is Links page</h1>
+    <h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam sequi voluptatem voluptate explicabo dolorum aut, placeat quas maxime fugiat, et, distinctio eligendi. Rerum, animi tenetur. Ex expedita saepe rem.</p></h3>
+    <div class="cen">
+    <h1 class="cc"> Laos.com</h1>
+    </div>
+    <h1 class="cd"> We are a <b><div id="ce">Creative</div></b> <br>Design Agency</h1>
+    <div class="main">
+    <div class="sidel">
+    <img src="./ll1.jpeg" alt="picture_Laos">
+    <div class="lef">
+        <h3>VINTAGE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit, recusandae quibusdam eius ipsum voluptates similique tempora labore quod, doloremque ullam deleniti explicabo perferendis doloribus commodi, perspiciatis culpa corrupti ipsam.</p>
+    </div>
+    </div>
+    <br>
+    <div class="sider">
+    <img src="./ll2.jpeg" alt="picture_Laos_2">
+    <div class="rig">   
+        <h3>OPERA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit, recusandae quibusdam eius ipsum voluptates similique tempora labore quod, doloremque ullam deleniti explicabo perferendis doloribus commodi, perspiciatis culpa corrupti ipsam.</p>
+    </div>
+    </div>
+    </div>
+    <div class="cat">
+        <button> <a href="file3.html">GO BACK</a></button>
+    </div>
+</body>
+</html>

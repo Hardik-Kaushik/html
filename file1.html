@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: black;}
+        .pagination{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .pagination a{
+            padding: 5px 5px;
+            border: 3px solid black;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 3px 3px 1px purple;
+            display: inline-block;
+        }
+        .pagination a.active{
+            background-color: aqua;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .pagination a:hover:not(.active){
+            background-color: grey;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+        .page{
+            height: auto;
+            width: auto;
+            border: 3px solid black;
+            margin: 30px;
+            display: flex;
+            background-color:rgb(230, 197, 49);
+            border-radius: 50%;
+            border-color: red;
+            box-shadow: 3px 3px 20px purple;
+        }
+        .inner{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="inner">
+    <h1 align="center">Welcome</h1>
+    <h2 align="center"> PAGE 1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sequi facilis iure eum impedit saepe, illo, fuga aliquid, natus alias repellat! Saepe, facere provident exercitationem distinctio nostrum commodi temporibus magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio distinctio enim dignissimos ipsum, ea deserunt provident modi corporis perspiciatis quos hic itaque ex? Vel tempore non veritatis eos totam!</p>
+    <br>
+
+    <div class="pagination">
+        <a href="file5.html"><</a>
+        <a href="file1.html" class="active">1</a>
+        <a href="file2.html">2</a>
+        <a href="file3.html">3</a>
+        <a href="file4.html">4</a>
+        <a href="file5.html">5</a>
+        <a href="file2.html">></a>
+    </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

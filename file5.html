@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .pagination a{
+            padding: 5px 5px;
+            border: 3px solid black;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 3px 3px 4px;
+            display: inline-block;
+        }
+        .pagination a.active{
+            background-color: aqua;
+            font-weight: bold;
+            border-radius: 10px;
+
+        }
+        .pagination a:hover:not(.active){
+            background-color: grey;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+        img{
+            width: 200px;
+            height: 140px;
+        }
+        .page{
+            margin: 25px;
+            padding: 25px;
+            border: 3px solid black;
+            background-color: beige;
+            text-align: center;
+        }
+        img{
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .gallery{
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            border: 4px solid blue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px black;
+            margin-bottom: 10%;
+        }
+        .des{
+            border:2px solid black;
+            border-color: red;
+        }
+        .gallery:hover{
+           font-size: 1.5em ;
+           border-radius: 10%;
+           box-shadow: 4px 4px 5px ;
+        }
+        body{
+            background-color: black;
+        }
+        .icons{
+            padding: 20px;
+            background-color: rgb(172, 211, 211);
+            display: inline-block;
+            border: 4px solid black;
+            box-shadow: 4px 4px 6px purple;
+            border-radius: 50%; 
+            text-align: center;
+            margin-bottom: 5%;
+            
+        }
+        .icons:hover{
+            background-color: black;
+            font-size: 1.3em;
+        }
+        .icons a{
+            text-decoration: none;
+        }
+        .fa-brands.fa-facebook{
+            font-size: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            color: #0000ff;
+        }
+        .fa-brands.fa-facebook:hover{
+          
+            font-size: 1.3em;
+            
+        }
+        .fa-brands.fa-twitter{
+            font-size: 20px;
+            padding-right: 20px;
+            color: rgb(14, 146, 190);
+        }
+        .fa-brands.fa-twitter:hover{
+           
+            font-size: 1.3em;
+            
+        }
+        .fa-brands.fa-youtube{
+            font-size: 20px;
+            padding-right: 20px;
+            color: red;
+        }
+        .fa-brands.fa-youtube:hover{
+            font-size: 1.3em;
+        }
+        .fa-brands.fa-instagram{
+            font-size: 20px;
+            padding-right: 20px;
+            color: rgb(220, 50, 78);           
+        }
+        .fa-brands.fa-instagram:hover{
+            font-size: 1.3em;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/732bfb5500.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page">
+    <h1 align="center">Welcome to Image Gallery</h1><br>
+    <div class="gallery">
+        <a target="_blank" href="pizza.jpeg">
+        <img src="pizza.jpeg" alt="picture 1" >
+        </a>
+        <div class="des">
+            PIZZA
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="pasta.jpeg">
+        <img src="pasta.jpeg" alt="picture 1">
+        </a>
+        <div class="des">
+            PASTA
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="burger.jpeg">
+        <img src="burger.jpeg" alt="picture 1">
+        </a>
+        <div class="des">
+            BURGER
+        </div>
+    </div>
+    <br><br><br>
+    <div class="icons">
+        <a href="https://facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <div class="pagination">
+        <a href="file4.html"><</a>
+        <a href="file1.html">1</a>
+        <a href="file2.html">2</a>
+        <a href="file3.html">3</a>
+        <a href="file4.html">4</a>
+        <a href="file5.html" class="active">5</a>
+        <a href="file1.html">></a>
+    </div>
+    </div>
+</body>
+</html>

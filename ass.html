@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Selection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select an Option:</h2>
+
+  <form id="optionForm">
+    <label for="options">Choose an option:</label>
+    <select id="options" name="options">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+      <option value="Option 4">Option 4</option>
+      <option value="Option 5">Option 5</option>
+    </select>
+
+    <br><br>
+
+    <button type="button" onclick="displaySelection()">Show Selection</button>
+  </form>
+
+  <div id="selectionResult"></div>
+
+  <script>
+    function displaySelection() {
+      // Get the selected option from the dropdown
+      var dropdown = document.getElementById('options');
+      var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+
+      // Display the selected option
+      var resultDiv = document.getElementById('selectionResult');
+      resultDiv.innerHTML = "You selected: " + selectedOption;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .pagination{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .pagination a{
+            padding: 5px 5px;
+            border: 3px solid black;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 3px 3px 4px;
+            display: inline-block;
+        }
+        .pagination a.active{
+            background-color: aqua;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .pagination a:hover:not(.active){
+            background-color: grey;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+        .page{
+            height: auto;
+            width: auto;
+            padding: 30px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;       
+            align-items: center;
+            box-shadow: 3px 3px 20px black;
+        }
+        body{
+            background-color: rgb(212, 212, 72);
+        }
+       
+        header{
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 20%;
+        }
+        
+        aside{
+            width: 25%;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            border-right: 2px solid black;
+        }
+        section{
+            width: 45%;
+            float: left;
+            padding: 10px;
+            text-align: center;
+            border-right: 2px solid black;
+        }
+        article{
+            width: 30%;
+            float: left;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar{
+            padding: 20px;
+            margin: 10px;
+            background-color: black;
+            width: 100%;
+            text-align: center;
+        }
+        .navbar a{
+            text-decoration: none;
+            padding: 20px;
+        }
+        .navbar a:hover{
+            font-size: 1.2em;
+            background-color: rgb(37, 233, 96);
+            font-weight: bold;
+        }
+        footer{
+            background-color: bisque;
+            width: 100%;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20%;
+        }
+        footer ul{
+            list-style-type: none;
+        }
+        footer a{
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        footer li{
+            font-weight: bold;
+        }
+        @media screen and (max-width:600px){
+            aside, section, article{
+                width: 100%;
+            }
+            .navbar a{
+                width: 100%;
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+    <h1 align="center">PAGE 4</h1>
+    <header>
+        <h2>HACKIFY</h2>
+    </header>
+    <nav class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="content.html">CONTENT</a>
+        <a href="links.html">LINKS</a>
+    </nav>
+    <main>
+        <aside>
+            <h3><u>THIS IS ASIDE</u></h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt veritatis ullam aliquid deleniti rerum dolores officia, iure sint ducimus eum iusto molestiae animi, odit nobis dolorum aperiam dolor fugiat!</P>
+        </aside>
+        <section>
+            <h2><u>THIS IS SECTION</u></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis aspernatur enim quod est, impedit error. Officiis ad eos excepturi, est atque sequi at architecto aspernatur, optio suscipit natus laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repudiandae saepe laborum, deserunt dolor quos accusamus corrupti dolores incidunt pariatur vero quidem nulla tenetur cupiditate facere molestiae quas alias delectus.</p>
+        </section>
+        <article>
+            <h3><u>THIS IS ARTICLE</u></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores magni officia cumque! Molestias ea laboriosam accusantium praesentium veritatis in, ut tenetur illo, ex quos eaque expedita eligendi labore dolorum iusto!</p>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">MAIL US</a></li>
+            <li><u>Contact-Us</u> : 91-12345</li>
+        </ul>
+    </footer>
+    <div class="pagination">
+        <a href="file3.html"><</a>
+        <a href="file1.html">1</a>
+        <a href="file2.html">2</a>
+        <a href="file3.html">3</a>
+        <a href="file4.html" class="active">4</a>
+        <a href="file5.html">5</a>
+        <a href="file5.html">></a>
+    </div>
+    </div>
+</body>
+</html>
